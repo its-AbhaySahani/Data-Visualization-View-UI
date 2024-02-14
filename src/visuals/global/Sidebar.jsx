@@ -45,7 +45,7 @@ const Sidebar = () => {
     { title: 'Dashboard', to: '/', icon: <HomeOutlinedIcon /> },
     { title: 'People', to: '/people', icon: <PeopleOutlinedIcon /> },
     { title: 'Contacts', to: '/contacts', icon: <ContactsOutlinedIcon /> },
-    { title: 'Receipts', to: '/receipts', icon: <ReceiptOutlinedIcon /> },
+    { title: 'Receipts', to: '/invoices', icon: <ReceiptOutlinedIcon /> },
     { title: 'Profile', to: '/profile', icon: <PersonOutlinedIcon /> },
     { title: 'Create User', to: '/form', icon: <HelpOutlinedIcon /> },
     { title: 'Bar Chart', to: '/bar-chart', icon: <BarChartOutlinedIcon /> },
