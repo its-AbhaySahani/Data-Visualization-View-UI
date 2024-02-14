@@ -51,6 +51,7 @@ const Sidebar = () => {
     { title: 'Bar Chart', to: '/bar-chart', icon: <BarChartOutlinedIcon /> },
     { title: 'Pie Chart', to: '/pie-chart', icon: <PieChartOutlinedIcon /> },
     { title: 'Timeline', to: '/timeline', icon: <TimelineOutlinedIcon /> },
+    { title: 'Team', to: '/team ', icon: <PersonOutlinedIcon />},
     { title: 'Map', to: '/map', icon: <MapOutlinedIcon /> },
   ];
 
