@@ -13,7 +13,6 @@ import GeographyChart from "../../components/GeographyChart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
 import React, { useState } from "react";
-import AmountStats from "../../components/AmountStats";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -134,7 +133,7 @@ const Dashboard = () => {
         >
           <StatBox
             title="12,361"
-            subtitle="Emails Sent"
+            subtitle="New Users"
             progress="0.75"
             increase="+14%"
             icon={
@@ -192,9 +191,9 @@ const Dashboard = () => {
         >
           <StatBox
             title="1,325,134"
-            subtitle="Traffic Inbound"
+            subtitle="Active Users"
             progress="0.80"
-            increase="+43%"
+            increase="-9%"
             icon={
               <TrafficIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
@@ -333,7 +332,7 @@ const Dashboard = () => {
             fontWeight="600"
             sx={{ p: "30px 30px 0 30px" }}
           >
-            Sales Quantity
+            Revenue
           </Typography>
           <Box height="250px" mt="-20px">
             <BarChart isDashboard={true} />
@@ -353,7 +352,7 @@ const Dashboard = () => {
             <GeographyChart isDashboard={true} />
           </Box>
         </Box>
-
+ 
         {/*  */}
       </Box>
     </Box>
