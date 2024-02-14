@@ -1,19 +1,19 @@
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { Routes, Route } from "react-router-dom";
-import Sidebar from "./visuals/global/Sidebar";
-import Topbar from "./visuals/global/Topbar";
-import Dashboard from "./visuals/dashboard";
-import Team from "./visuals/team";
-import Contacts from "./visuals/contacts";
-import Invoices from "./visuals/invoices";
-import Form from "./visuals/form";
-import Calendar from "./visuals/calendar";
-import Faq from "./visuals/faq";
-import Bar from "./visuals/bar";
-import Pie from "./visuals/pie";
-import Line from "./visuals/line";
-import Geography from "./visuals/geography";
+import Sidebar from "./scenes/global/Sidebar";
+import Topbar from "./scenes/global/Topbar";
+import Dashboard from "./scenes/dashboard";
+import Team from "./scenes/team";
+import Contacts from "./scenes/contacts";
+import Invoices from "./scenes/invoices";
+import Form from "./scenes/form";
+import Calendar from "./scenes/calendar";
+import Faq from "./scenes/faq";
+import Bar from "./scenes/bar";
+import Pie from "./scenes/pie";
+import Line from "./scenes/line";
+import Geography from "./scenes/geography";
 
 function App() {
   const [theme, colorMode] = useMode();
