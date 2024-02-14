@@ -12,10 +12,14 @@ import BarChart from "../../components/BarChart";
 import GeographyChart from "../../components/GeographyChart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
+import React, { useState } from "react";
 
 const Dashboard = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+
+  const [selectedTimePeriod, setSelectedTimePeriod] = useState("1D");
+
 
   return (
     <Box m="20px">
@@ -23,6 +27,57 @@ const Dashboard = () => {
         <Header title="DASHBOARD" subtitle="Welcome to your Dashboard" />
 
         <Box>
+        <Button
+            onClick={() => setSelectedTimePeriod("1D")} // Set selected time period to 1D
+            sx={{
+              backgroundColor: selectedTimePeriod === "1D" ? colors.blueAccent[700] : colors.grey[100],
+              color: selectedTimePeriod === "1D" ? colors.grey[100] : colors.blueAccent[700],
+              fontSize: "12px",
+              fontWeight: "bold",
+              padding: "5px 10px",
+              marginRight: "10px", // Adjust spacing between buttons
+            }}
+          >
+            1D
+          </Button>
+          <Button
+            onClick={() => setSelectedTimePeriod("1W")} // Set selected time period to 1W
+            sx={{
+              backgroundColor: selectedTimePeriod === "1W" ? colors.blueAccent[700] : colors.grey[100],
+              color: selectedTimePeriod === "1W" ? colors.grey[100] : colors.blueAccent[700],
+              fontSize: "12px",
+              fontWeight: "bold",
+              padding: "5px 10px",
+              marginRight: "10px", // Adjust spacing between buttons
+            }}
+          >
+            1W
+          </Button>
+          <Button
+            onClick={() => setSelectedTimePeriod("1M")} // Set selected time period to 1M
+            sx={{
+              backgroundColor: selectedTimePeriod === "1M" ? colors.blueAccent[700] : colors.grey[100],
+              color: selectedTimePeriod === "1M" ? colors.grey[100] : colors.blueAccent[700],
+              fontSize: "12px",
+              fontWeight: "bold",
+              padding: "5px 10px",
+              marginRight: "10px", // Adjust spacing between buttons
+            }}
+          >
+            1M
+          </Button>
+          <Button
+            onClick={() => setSelectedTimePeriod("1Y")} // Set selected time period to 1Y
+            sx={{
+              backgroundColor: selectedTimePeriod === "1Y" ? colors.blueAccent[700] : colors.grey[100],
+              color: selectedTimePeriod === "1Y" ? colors.grey[100] : colors.blueAccent[700],
+              fontSize: "12px",
+              fontWeight: "bold",
+              padding: "5px 10px",
+            }}
+          >
+            1Y
+          </Button>
           <Button
             sx={{
               backgroundColor: colors.blueAccent[700],
@@ -143,14 +198,14 @@ const Dashboard = () => {
                 fontWeight="600"
                 color={colors.grey[100]}
               >
-                Revenue Generated
+                
               </Typography>
               <Typography
                 variant="h3"
                 fontWeight="bold"
                 color={colors.greenAccent[500]}
               >
-                $59,342,32
+                
               </Typography>
             </Box>
 
