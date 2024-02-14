@@ -13,6 +13,7 @@ import GeographyChart from "../../components/GeographyChart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
 import React, { useState } from "react";
+import AmountStats from "../../components/AmountStats";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -20,18 +21,23 @@ const Dashboard = () => {
 
   const [selectedTimePeriod, setSelectedTimePeriod] = useState("1D");
 
-
   return (
     <Box m="20px">
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="DASHBOARD" subtitle="Welcome to your Dashboard" />
 
         <Box>
-        <Button
+          <Button
             onClick={() => setSelectedTimePeriod("1D")} // Set selected time period to 1D
             sx={{
-              backgroundColor: selectedTimePeriod === "1D" ? colors.blueAccent[700] : colors.grey[100],
-              color: selectedTimePeriod === "1D" ? colors.grey[100] : colors.blueAccent[700],
+              backgroundColor:
+                selectedTimePeriod === "1D"
+                  ? colors.blueAccent[700]
+                  : colors.grey[100],
+              color:
+                selectedTimePeriod === "1D"
+                  ? colors.grey[100]
+                  : colors.blueAccent[700],
               fontSize: "12px",
               fontWeight: "bold",
               padding: "5px 10px",
@@ -43,8 +49,14 @@ const Dashboard = () => {
           <Button
             onClick={() => setSelectedTimePeriod("1W")} // Set selected time period to 1W
             sx={{
-              backgroundColor: selectedTimePeriod === "1W" ? colors.blueAccent[700] : colors.grey[100],
-              color: selectedTimePeriod === "1W" ? colors.grey[100] : colors.blueAccent[700],
+              backgroundColor:
+                selectedTimePeriod === "1W"
+                  ? colors.blueAccent[700]
+                  : colors.grey[100],
+              color:
+                selectedTimePeriod === "1W"
+                  ? colors.grey[100]
+                  : colors.blueAccent[700],
               fontSize: "12px",
               fontWeight: "bold",
               padding: "5px 10px",
@@ -56,8 +68,14 @@ const Dashboard = () => {
           <Button
             onClick={() => setSelectedTimePeriod("1M")} // Set selected time period to 1M
             sx={{
-              backgroundColor: selectedTimePeriod === "1M" ? colors.blueAccent[700] : colors.grey[100],
-              color: selectedTimePeriod === "1M" ? colors.grey[100] : colors.blueAccent[700],
+              backgroundColor:
+                selectedTimePeriod === "1M"
+                  ? colors.blueAccent[700]
+                  : colors.grey[100],
+              color:
+                selectedTimePeriod === "1M"
+                  ? colors.grey[100]
+                  : colors.blueAccent[700],
               fontSize: "12px",
               fontWeight: "bold",
               padding: "5px 10px",
@@ -69,8 +87,14 @@ const Dashboard = () => {
           <Button
             onClick={() => setSelectedTimePeriod("1Y")} // Set selected time period to 1Y
             sx={{
-              backgroundColor: selectedTimePeriod === "1Y" ? colors.blueAccent[700] : colors.grey[100],
-              color: selectedTimePeriod === "1Y" ? colors.grey[100] : colors.blueAccent[700],
+              backgroundColor:
+                selectedTimePeriod === "1Y"
+                  ? colors.blueAccent[700]
+                  : colors.grey[100],
+              color:
+                selectedTimePeriod === "1Y"
+                  ? colors.grey[100]
+                  : colors.blueAccent[700],
               fontSize: "12px",
               fontWeight: "bold",
               padding: "5px 10px",
@@ -197,16 +221,12 @@ const Dashboard = () => {
                 variant="h5"
                 fontWeight="600"
                 color={colors.grey[100]}
-              >
-                
-              </Typography>
+              ></Typography>
               <Typography
                 variant="h3"
                 fontWeight="bold"
                 color={colors.greenAccent[500]}
-              >
-                
-              </Typography>
+              ></Typography>
             </Box>
 
             <Box>
@@ -218,7 +238,7 @@ const Dashboard = () => {
             </Box>
           </Box>
 
-          <Box height="250px" mt="-20px">
+          <Box height="300px" mt="-20px">
             <LineChart isDashboard={true} />
           </Box>
         </Box>

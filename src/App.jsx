@@ -8,8 +8,6 @@ import Team from "./visuals/team";
 import Contacts from "./visuals/contacts";
 import Invoices from "./visuals/invoices";
 import Form from "./visuals/form";
-import Calendar from "./visuals/calendar";
-import Faq from "./visuals/faq";
 import Bar from "./visuals/bar";
 import Pie from "./visuals/pie";
 import Line from "./visuals/line";
@@ -34,8 +32,6 @@ function App() {
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<Form />} />
-              <Route path="/calendar" element={<Calendar />} />
-              <Route path="/faq" element={<Faq />} />
               <Route path="/bar" element={<Bar />} />
               <Route path="/pie" element={<Pie />} />
               <Route path="/line" element={<Line />} />
