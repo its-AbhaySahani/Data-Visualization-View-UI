@@ -59,7 +59,7 @@ const Sidebar = () => {
   const user = {
     name: 'Abhay Sahani',
     role: 'Admin',
-    avatar: '../../assets/avatar.png', // Adjusted image path
+    avatar: '../../src/assets/avatar.png', // Adjusted image path
   };
 
   return (
@@ -87,6 +87,7 @@ const Sidebar = () => {
         </IconButton>
       </div>
 
+
       {/* USER */}
       <div style={{ marginBottom: '25px', padding: '0 20px' }}>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -95,6 +96,7 @@ const Sidebar = () => {
             height="100px"
             src={user.avatar}
             alt="profile-user"
+            
             style={{ cursor: 'pointer', borderRadius: '50%' }}
           />
         </div>
